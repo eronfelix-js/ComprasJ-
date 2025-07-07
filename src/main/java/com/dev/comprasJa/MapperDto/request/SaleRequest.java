@@ -6,5 +6,6 @@ import java.util.List;
 
 @Builder
 public record SaleRequest(
-        List<SaleItemRequest> items
+        List<SaleItemRequest> items,
+        long paymentMethod
 ) {}

@@ -19,6 +19,8 @@ public class SaleMapper {
                 .id(sale.getId())
                 .timestamp(sale.getTimestamp())
                 .total(sale.getTotal())
+                .paymentType(sale.getPaymentMethod().getType())
+                .paymentFlag(sale.getPaymentMethod().getFlag())
                 .items(toItemResponseList(sale.getItems()))
                 .build();
     }

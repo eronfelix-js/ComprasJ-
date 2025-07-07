@@ -21,4 +21,8 @@ public class Sale {
 
     @OneToMany(mappedBy = "sale", cascade = CascadeType.ALL)
     private List<SaleItem> items;
+
+    @ManyToOne
+    private PaymentMethod paymentMethod;
+
 }

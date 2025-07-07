@@ -11,5 +11,7 @@ public record SaleResponse(
         Long id,
         LocalDateTime timestamp,
         BigDecimal total,
-        List<SaleItemResponse> items
+        List<SaleItemResponse> items,
+        String paymentType,
+        String paymentFlag
 ) {}
